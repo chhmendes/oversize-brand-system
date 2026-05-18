@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import type { NavigationItem } from '@/types/content'
-import { useAuth } from '@/context/AuthContext'
 
 const ICONS: Record<string, React.ReactNode> = {
   estrategia: (
@@ -63,7 +62,6 @@ export function Sidebar({ items }: SidebarProps) {
   const pathname = usePathname()
   const [mounted, setMounted] = useState(false)
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({})
-  const { displayName, initials, profile, isAdmin } = useAuth()
 
   useEffect(() => {
     setMounted(true)
@@ -101,21 +99,21 @@ export function Sidebar({ items }: SidebarProps) {
   return (
     <aside className="flex h-screen w-[280px] flex-shrink-0 flex-col border-r bg-white dark:bg-[#3C3C3C]" style={{ borderColor: 'var(--border-1)' }}>
       {/* Logo */}
-      <div className="flex-shrink-0 border-b px-5 py-3" style={{ borderColor: 'var(--border-1)' }}>
+      <div className="flex flex-shrink-0 items-center justify-center border-b py-4" style={{ borderColor: 'var(--border-1)' }}>
         <Link href="/">
           <Image
             src="/brand/logo-original.png"
             alt="Oversize"
-            width={88}
-            height={88}
+            width={132}
+            height={132}
             className="dark:hidden"
             priority
           />
           <Image
             src="/brand/logo-gray-on-dark.png"
             alt="Oversize"
-            width={88}
-            height={88}
+            width={132}
+            height={132}
             className="hidden dark:block"
             priority
           />
@@ -189,42 +187,6 @@ export function Sidebar({ items }: SidebarProps) {
         })}
       </nav>
 
-      {/* Configurações — apenas admin */}
-      {isAdmin && (
-        <Link
-          href="/settings/members"
-          className="flex items-center gap-3 border-t px-5 py-2.5 transition-colors duration-150 hover:bg-[#FAFAFA] dark:hover:bg-white/5"
-          style={{ borderColor: 'var(--border-1)' }}
-        >
-          <span style={{ color: 'var(--fg-3)' }}>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="8" cy="8" r="2.5" />
-              <path d="M8 1v1.5M8 13.5V15M1 8h1.5M13.5 8H15M3.05 3.05l1.06 1.06M11.89 11.89l1.06 1.06M11.89 4.11l1.06-1.06M3.05 12.95l1.06-1.06" />
-            </svg>
-          </span>
-          <span className="text-xs font-medium" style={{ color: 'var(--fg-2)' }}>
-            Configurações
-          </span>
-        </Link>
-      )}
-
-      {/* Perfil */}
-      <div className="flex h-14 flex-shrink-0 items-center gap-3 border-t px-5" style={{ borderColor: 'var(--border-1)' }}>
-        <div
-          className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-sm"
-          style={{ background: 'var(--ov-graphite)' }}
-        >
-          <span className="text-xs font-black lowercase text-white">{initials}</span>
-        </div>
-        <div className="flex flex-col">
-          <span className="text-xs font-semibold leading-none" style={{ color: 'var(--fg-1)' }}>
-            {displayName}
-          </span>
-          <span className="mt-0.5 text-[10px] leading-none" style={{ color: 'var(--fg-3)' }}>
-            {profile?.role === 'admin' ? 'Admin' : 'Staff'}
-          </span>
-        </div>
-      </div>
     </aside>
   )
 }
