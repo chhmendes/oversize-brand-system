@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 
 export interface SearchResult {
   id: string;
@@ -183,15 +183,13 @@ interface FuseSearchBoxProps {
 export function FuseSearchBox({
   placeholder = 'Search...',
   data,
-  threshold = 0.3,
+  threshold: _threshold = 0.3,
   onSelectResult,
 }: FuseSearchBoxProps) {
-  const [query, setQuery] = useState('');
   const [results, setResults] = useState<SearchResult[]>([]);
 
   const handleSearch = useCallback(
     (searchQuery: string) => {
-      setQuery(searchQuery);
 
       if (searchQuery.length < 2) {
         setResults([]);

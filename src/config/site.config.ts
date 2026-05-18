@@ -168,5 +168,5 @@ export type SiteConfig = typeof siteConfig
  */
 export function getConfig<K extends keyof SiteConfig>(key: K, fallback?: SiteConfig[K]): SiteConfig[K] {
   const value = siteConfig[key]
-  return value !== undefined ? value : fallback
+  return (value !== undefined ? value : fallback) as SiteConfig[K]
 }

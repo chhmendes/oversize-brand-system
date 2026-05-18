@@ -80,7 +80,7 @@ export function searchBySection(section: string, results: SearchResult[]): Searc
 /**
  * Search by tags
  */
-export function searchByTags(tags: string[], results: SearchResult[]): SearchResult[] {
+export function searchByTags(_tags: string[], results: SearchResult[]): SearchResult[] {
   // This would require tags to be indexed in SearchResult
   // For now, this is a placeholder
   return results
