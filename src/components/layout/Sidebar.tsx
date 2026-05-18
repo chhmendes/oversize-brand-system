@@ -99,7 +99,7 @@ export function Sidebar({ items }: SidebarProps) {
   }
 
   return (
-    <aside className="flex h-screen w-[280px] flex-shrink-0 flex-col border-r bg-white dark:bg-[#333333]" style={{ borderColor: 'var(--border-1)' }}>
+    <aside className="flex h-screen w-[280px] flex-shrink-0 flex-col border-r bg-white dark:bg-[#3C3C3C]" style={{ borderColor: 'var(--border-1)' }}>
       {/* Logo */}
       <div className="flex-shrink-0 border-b px-5 py-3" style={{ borderColor: 'var(--border-1)' }}>
         <Link href="/">
