@@ -1,0 +1,198 @@
+# Paleta de Cores
+
+## 1. O Princípio
+
+A Oversize trabalha com **três cores que fazem a maioria do trabalho**.
+
+Todo o resto é restrição.
+
+| Cor | Hex | Papel |
+|---|---|---|
+| Red | `#B51F3A` | Acento. O grito. Uma vez por tela. |
+| Graphite | `#3C3C3C` | Base escura. Texto primário. Superfície dark. |
+| Ash | `#D9D9D9` | Neutro claro. Superfície light. Texto sobre escuro. |
+
+Adicionam-se branco (`#FFFFFF`) e preto absoluto (`#0A0A0A`) como extremos.
+
+Tudo o mais é derivação ou status.
+
+---
+
+## 2. Psicologia das Cores
+
+### Vermelho `#B51F3A`
+
+Este não é o vermelho de alerta, nem o vermelho de promoção. É o vermelho de **presença e ação**.
+
+- escuro o suficiente para ter autoridade;
+- saturado o suficiente para ter energia;
+- controlado o suficiente para não gritar.
+
+Contextos corretos: botões primários, o "over" do logotipo, um único elemento de ênfase por tela, fundos hero.
+
+**Nunca usar como cor de fundo para leitura longa.**
+
+### Grafite `#3C3C3C`
+
+Não é preto. É um preto que respira.
+
+O grafite é a cor da **solidez sem opressão**. Funciona como fundo sem pesar, como texto sem endurecer, como borda sem isolar.
+
+É a cor que segura o vermelho.
+
+### Ash `#D9D9D9`
+
+A cinza que equilibra tudo. Não é fria, não é quente. É **neutra no melhor sentido** — deixa as outras cores brilharem.
+
+Como superfície: dá profundidade sem sair da paleta.  
+Como texto sobre escuro: garante leitura sem usar branco absoluto.
+
+---
+
+## 3. Escala Completa
+
+### Escala do Vermelho
+
+| Token | Hex | Uso |
+|---|---|---|
+| `--ov-red-tint` | `#F5E3E7` | Wash suave. Fundo de foco/ring. |
+| `--ov-red` | `#B51F3A` | Padrão. |
+| `--ov-red-bright` | `#D42848` | Hover sobre superfície vermelha. |
+| `--ov-red-deep` | `#8E1A2E` | Press / ativo. Borda de fundo vermelho. |
+
+### Escala do Grafite
+
+| Token | Hex | Uso |
+|---|---|---|
+| `--ov-ash-soft` | `#ECECEC` | Divider sutil. Background de card. |
+| `--ov-ash` | `#D9D9D9` | Superfície neutra. Texto secundário sobre escuro. |
+| `--ov-ash-deep` | `#BFBFBF` | Borda sobre fundo claro. |
+| `--ov-graphite-soft` | `#555555` | Borda sobre fundo escuro. |
+| `--ov-graphite` | `#3C3C3C` | Superfície dark primária. |
+| `--ov-graphite-deep` | `#222222` | O mais escuro. Shadow hard. |
+
+---
+
+## 4. Tokens Semânticos
+
+### Foreground (texto e ícones)
+
+| Token | Resolve para | Uso |
+|---|---|---|
+| `--fg-1` | `#222222` | Texto primário em fundo claro |
+| `--fg-2` | `#3C3C3C` | Texto secundário em fundo claro |
+| `--fg-3` | `#7A7A7A` | Texto terciário / muted |
+| `--fg-inverse-1` | `#FFFFFF` | Texto primário em fundo escuro |
+| `--fg-inverse-2` | `#D9D9D9` | Texto secundário em fundo escuro |
+| `--fg-brand` | `#B51F3A` | Texto de ênfase de marca |
+
+### Background (superfícies)
+
+| Token | Resolve para | Uso |
+|---|---|---|
+| `--bg-1` | `#FFFFFF` | Página base |
+| `--bg-2` | `#FAFAFA` | Painel sutil |
+| `--bg-3` | `#ECECEC` | Card sobre fundo claro |
+| `--bg-dark-1` | `#3C3C3C` | Dark primário |
+| `--bg-dark-2` | `#222222` | Dark mais profundo |
+| `--bg-accent` | `#B51F3A` | Fundo vermelho |
+
+### Borders
+
+| Token | Resolve para | Uso |
+|---|---|---|
+| `--border-1` | `#D9D9D9` | Borda padrão leve |
+| `--border-2` | `#BFBFBF` | Borda média |
+| `--border-dark-1` | `#555555` | Borda sobre escuro |
+| `--border-accent` | `#B51F3A` | Borda de ênfase |
+
+### Status (derivados, fora da marca)
+
+| Token | Hex | Uso |
+|---|---|---|
+| `--status-success` | `#2D7D46` | Positivo |
+| `--status-warning` | `#D69F1E` | Atenção |
+| `--status-danger` | `#B51F3A` | Erro (= brand red) |
+| `--status-info` | `#2E6FB7` | Informativo |
+
+---
+
+## 5. A Regra Principal
+
+> **Um vermelho por tela.**
+
+O vermelho é a exclamação. Se tudo for vermelho, nada é.
+
+Cada tela, cada slide, cada post, cada página tem **um elemento vermelho principal**. O restante é grafite, ash, branco — e o vermelho aparece onde importa.
+
+---
+
+## 6. Regras de Combinação
+
+### O que funciona
+
+| Fundo | Texto |
+|---|---|
+| Branco | Grafite (primário), Ash-deep (secundário) |
+| Ash | Grafite-deep, Graphite |
+| Ash-soft | Graphite, fg-2 |
+| Graphite | Ash (primário), white (secundário) |
+| Graphite-deep | White, Ash |
+| Red | Ash (logo gray on red), white |
+
+### O que não funciona
+
+- **Vermelho sobre grafite como texto** — contraste insuficiente (~3.2:1, abaixo do AA para texto normal)
+- **Ash sobre branco como texto longo** — muito baixo contraste
+- **Gradientes** — não existem na Oversize
+
+---
+
+## 7. Sem Gradientes
+
+A Oversize é plana. Nenhuma superfície tem gradiente.
+
+O fundo é um sólido. O texto é um sólido. O botão é um sólido.
+
+A profundidade vem de **camadas de superfície** (planos sobrepostos com bordas e shadows hard), não de degradê.
+
+---
+
+## 8. Códigos para Produção
+
+### Vermelho `#B51F3A`
+
+| Padrão | Valor |
+|---|---|
+| HEX | `#B51F3A` |
+| RGB | `181, 31, 58` |
+| CMYK | `0, 83, 68, 29` |
+| HSL | `349°, 71%, 42%` |
+
+### Grafite `#3C3C3C`
+
+| Padrão | Valor |
+|---|---|
+| HEX | `#3C3C3C` |
+| RGB | `60, 60, 60` |
+| CMYK | `0, 0, 0, 76` |
+| HSL | `0°, 0%, 24%` |
+
+### Ash `#D9D9D9`
+
+| Padrão | Valor |
+|---|---|
+| HEX | `#D9D9D9` |
+| RGB | `217, 217, 217` |
+| CMYK | `0, 0, 0, 15` |
+| HSL | `0°, 0%, 85%` |
+
+---
+
+## 9. Síntese
+
+Três cores. Uma regra.
+
+O sistema cromático da Oversize é uma declaração de posicionamento: marcas que precisam de oito cores não sabem o que querem dizer. A Oversize sabe.
+
+> **Vermelho para acento. Grafite para estrutura. Ash para respiro.**

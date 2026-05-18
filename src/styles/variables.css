@@ -1,0 +1,282 @@
+/* ===================================
+   CSS CUSTOM PROPERTIES (DESIGN TOKENS)
+   =================================== */
+
+:root {
+  /* ===================================
+     COLORS
+     =================================== */
+
+  /* Primary Blue */
+  --color-primary: #0066ff;
+  --color-primary-dark: #0052cc;
+  --color-primary-darker: #003366;
+  --color-primary-light: #e6f0ff;
+
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-gray-light: #f5f5f5;
+  --color-gray-medium: #cccccc;
+  --color-gray-dark: #333333;
+  --color-gray-text: #666666;
+  --color-black: #000000;
+
+  /* Semantic Colors */
+  --color-success: #00cc00;
+  --color-error: #ff3333;
+  --color-warning: #ffb300;
+  --color-info: #0066ff;
+
+  /* Additional Grays */
+  --color-gray-99: #f9f9f9;
+  --color-gray-95: #f2f2f2;
+  --color-gray-90: #e6e6e6;
+  --color-gray-80: #cccccc;
+  --color-gray-70: #b3b3b3;
+  --color-gray-60: #999999;
+  --color-gray-50: #808080;
+  --color-gray-40: #666666;
+  --color-gray-30: #4d4d4d;
+  --color-gray-20: #333333;
+  --color-gray-10: #1a1a1a;
+
+  /* ===================================
+     TYPOGRAPHY
+     =================================== */
+
+  /* Font Family */
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', sans-serif;
+  --font-family-mono: 'Courier New', monospace;
+
+  /* Font Sizes */
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  --font-size-body-large: 1.125rem;
+  --font-size-body: 1rem;
+  --font-size-body-small: 0.875rem;
+  --font-size-caption: 0.75rem;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+  --line-height-loose: 1.8;
+
+  /* ===================================
+     SPACING (8px SCALE)
+     =================================== */
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 2.5rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* Additional spacing */
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+
+  /* ===================================
+     SHADOWS & ELEVATION
+     =================================== */
+
+  /* Box Shadows (elevation) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-base: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+  /* Shadows with blue tint (for primary elements) */
+  --shadow-primary-sm: 0 2px 4px rgba(0, 102, 255, 0.1);
+  --shadow-primary-md: 0 4px 12px rgba(0, 102, 255, 0.1);
+  --shadow-primary-lg: 0 8px 24px rgba(0, 102, 255, 0.15);
+
+  /* Error shadows */
+  --shadow-error: 0 0 0 3px rgba(255, 51, 51, 0.1);
+
+  /* Success shadows */
+  --shadow-success: 0 0 0 3px rgba(0, 204, 0, 0.1);
+
+  /* ===================================
+     BORDER RADIUS
+     =================================== */
+
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-full: 50%;
+  --border-radius-none: 0;
+
+  /* Component-specific radius */
+  --radius-button: 0.375rem;
+  --radius-card: 0.5rem;
+  --radius-input: 0.375rem;
+
+  /* ===================================
+     BORDERS
+     =================================== */
+
+  --border-width-thin: 1px;
+  --border-width-thick: 2px;
+
+  --border-color-default: #cccccc;
+  --border-color-active: #0066ff;
+  --border-color-error: #ff3333;
+  --border-color-success: #00cc00;
+
+  /* ===================================
+     TRANSITIONS & ANIMATIONS
+     =================================== */
+
+  /* Transition Durations */
+  --transition-fast: 0.2s;
+  --transition-default: 0.3s;
+  --transition-slow: 0.5s;
+
+  /* Transition Timing Functions */
+  --timing-ease: ease;
+  --timing-ease-in: ease-in;
+  --timing-ease-out: ease-out;
+  --timing-ease-in-out: ease-in-out;
+  --timing-linear: linear;
+
+  /* Animation Durations */
+  --animation-gradient: 8s;
+  --animation-spin: 0.8s;
+
+  /* ===================================
+     BREAKPOINTS (for reference)
+     =================================== */
+
+  /* Mobile-first approach */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* ===================================
+     Z-INDEX SCALE
+     =================================== */
+
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+
+  /* Component-specific */
+  --z-sidebar: 50;
+  --z-apps-button: 100;
+  --z-login-card: 10;
+
+  /* ===================================
+     LAYOUT DIMENSIONS
+     =================================== */
+
+  /* Sidebar */
+  --sidebar-width-expanded: 280px;
+  --sidebar-width-collapsed: 80px;
+  --sidebar-width-mobile: 100%;
+
+  /* Grid */
+  --grid-columns: 12;
+  --grid-gutter: 1.5rem;
+
+  /* Container padding */
+  --container-padding-mobile: 1rem;
+  --container-padding-tablet: 1.5rem;
+  --container-padding-desktop: 2rem;
+  --container-padding-xl: 3rem;
+
+  /* ===================================
+     COMPONENT-SPECIFIC TOKENS
+     =================================== */
+
+  /* Button padding */
+  --button-padding-sm: 0.5rem 1rem;
+  --button-padding-md: 0.75rem 1.5rem;
+  --button-padding-lg: 1rem 2rem;
+
+  /* Input padding */
+  --input-padding: 0.75rem 1rem;
+  --input-height: 2.5rem;
+
+  /* Card padding */
+  --card-padding-sm: 1rem;
+  --card-padding-md: 1.5rem;
+  --card-padding-lg: 2rem;
+
+  /* Avatar size */
+  --avatar-size: 2.5rem;
+
+  /* Logo size */
+  --logo-size: 2.5rem;
+}
+
+/* ===================================
+   MEDIA QUERY HELPER VARIABLES
+   (For easier reference in components)
+   =================================== */
+
+/* Mobile: 320px - 639px */
+@media (max-width: 640px) {
+  :root {
+    --font-size-h1: 1.75rem;
+    --font-size-h2: 1.375rem;
+    --font-size-h3: 1.125rem;
+    --container-padding: var(--container-padding-mobile);
+  }
+}
+
+/* Tablet: 640px - 1023px */
+@media (min-width: 640px) and (max-width: 1023px) {
+  :root {
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.5rem;
+    --font-size-h3: 1.25rem;
+    --sidebar-width: var(--sidebar-width-collapsed);
+    --container-padding: var(--container-padding-tablet);
+  }
+}
+
+/* Desktop: 1024px+ */
+@media (min-width: 1024px) {
+  :root {
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.5rem;
+    --sidebar-width: var(--sidebar-width-expanded);
+    --container-padding: var(--container-padding-desktop);
+  }
+}
+
+/* Extra large: 1280px+ */
+@media (min-width: 1280px) {
+  :root {
+    --container-padding: var(--container-padding-xl);
+  }
+}

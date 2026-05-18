@@ -1,0 +1,290 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Sansa Pro ─────────────────────────────────────────────────────────── */
+@font-face {
+  font-family: 'Sansa Pro';
+  src: url('/fonts/SansaPro-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sansa Pro';
+  src: url('/fonts/SansaPro-Normal.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sansa Pro';
+  src: url('/fonts/SansaPro-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sansa Pro';
+  src: url('/fonts/SansaPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sansa Pro';
+  src: url('/fonts/SansaPro-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Design Tokens ─────────────────────────────────────────────────────── */
+:root {
+  /* Brand core */
+  --ov-red:              #B51F3A;
+  --ov-red-deep:         #8E1A2E;
+  --ov-red-bright:       #D42848;
+  --ov-red-tint:         #F5E3E7;
+
+  --ov-graphite:         #3C3C3C;
+  --ov-graphite-deep:    #222222;
+  --ov-graphite-soft:    #555555;
+
+  --ov-ash:              #D9D9D9;
+  --ov-ash-soft:         #ECECEC;
+  --ov-ash-deep:         #BFBFBF;
+
+  --ov-white:            #FFFFFF;
+  --ov-black:            #0A0A0A;
+
+  /* Semantic foreground */
+  --fg-1:                #222222;
+  --fg-2:                #3C3C3C;
+  --fg-3:                #7A7A7A;
+  --fg-inverse-1:        #FFFFFF;
+  --fg-inverse-2:        #D9D9D9;
+  --fg-brand:            #B51F3A;
+
+  /* Semantic background */
+  --bg-1:                #FFFFFF;
+  --bg-2:                #FAFAFA;
+  --bg-3:                #ECECEC;
+  --bg-dark-1:           #3C3C3C;
+  --bg-dark-2:           #222222;
+  --bg-accent:           #B51F3A;
+
+  /* Borders */
+  --border-1:            #D9D9D9;
+  --border-2:            #BFBFBF;
+  --border-dark-1:       #555555;
+  --border-accent:       #B51F3A;
+
+  /* Type families */
+  --font-display:        'Sansa Pro', system-ui, sans-serif;
+  --font-body:           'Sansa Pro', system-ui, sans-serif;
+  --font-mono:           'JetBrains Mono', ui-monospace, monospace;
+
+  /* Type scale */
+  --fs-display-xl:       96px;
+  --fs-display-l:        72px;
+  --fs-display-m:        56px;
+  --fs-h1:               40px;
+  --fs-h2:               32px;
+  --fs-h3:               24px;
+  --fs-h4:               20px;
+  --fs-body-l:           18px;
+  --fs-body:             16px;
+  --fs-body-s:           14px;
+  --fs-caption:          12px;
+
+  /* Weights */
+  --fw-light:            300;
+  --fw-regular:          400;
+  --fw-semibold:         600;
+  --fw-bold:             700;
+  --fw-black:            900;
+
+  /* Line heights */
+  --lh-tight:            1.02;
+  --lh-snug:             1.12;
+  --lh-normal:           1.35;
+  --lh-loose:            1.6;
+
+  /* Tracking */
+  --tr-display:          -0.03em;
+  --tr-tight:            -0.01em;
+  --tr-normal:            0em;
+  --tr-label:             0.12em;
+
+  /* Spacing (4px base) */
+  --sp-1: 4px;  --sp-2: 8px;   --sp-3: 12px;  --sp-4: 16px;
+  --sp-5: 24px; --sp-6: 32px;  --sp-7: 48px;  --sp-8: 64px;
+  --sp-9: 96px; --sp-10: 128px;
+
+  /* Radii — brand prefers sharp edges */
+  --r-0: 0px; --r-1: 2px; --r-2: 4px; --r-3: 8px; --r-pill: 999px;
+
+  /* Shadows */
+  --sh-1:      0 1px 2px rgba(10,10,10,.06);
+  --sh-2:      0 4px 12px rgba(10,10,10,.08);
+  --sh-hard:   6px 6px 0 0 #222222;
+  --sh-hard-red: 6px 6px 0 0 #B51F3A;
+
+  /* Motion */
+  --ease-punch: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast:   120ms;
+  --dur-base:   200ms;
+}
+
+/* ── Dark mode token overrides ──────────────────────────────────────────── */
+html.dark {
+  --fg-1:          #F2F2F2;
+  --fg-2:          #D9D9D9;
+  --fg-3:          #A0A0A0;
+  --fg-inverse-1:  #3C3C3C;
+  --fg-inverse-2:  #555555;
+
+  --bg-1:          #3C3C3C;
+  --bg-2:          #333333;
+  --bg-3:          #484848;
+  --bg-dark-1:     #D9D9D9;
+  --bg-dark-2:     #F2F2F2;
+  --bg-accent:     #D42848;
+
+  --border-1:      #555555;
+  --border-2:      #666666;
+  --border-dark-1: #BFBFBF;
+
+  --ov-red-tint:   rgba(181,31,58,0.22);
+}
+
+/* ── Base ───────────────────────────────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  html::-webkit-scrollbar { display: none; }
+  * { scrollbar-width: none; -ms-overflow-style: none; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--fg-1);
+    background: var(--bg-1);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1 { font-size: var(--fs-h1); font-weight: var(--fw-bold); line-height: var(--lh-snug); letter-spacing: var(--tr-tight); }
+  h2 { font-size: var(--fs-h2); font-weight: var(--fw-bold); line-height: var(--lh-snug); letter-spacing: var(--tr-tight); }
+  h3 { font-size: var(--fs-h3); font-weight: var(--fw-semibold); line-height: var(--lh-snug); }
+  h4 { font-size: var(--fs-h4); font-weight: var(--fw-semibold); line-height: var(--lh-normal); }
+  p  { font-size: var(--fs-body); line-height: var(--lh-loose); color: var(--fg-2); }
+
+  a { color: var(--ov-red); transition: color var(--dur-fast); }
+  a:hover { color: var(--ov-red-bright); }
+
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.875em;
+    background: var(--bg-3);
+    padding: 2px 6px;
+    border-radius: var(--r-1);
+  }
+
+  blockquote {
+    border-left: 3px solid var(--ov-red);
+    padding-left: 16px;
+    color: var(--fg-2);
+    font-style: italic;
+  }
+
+  table  { width: 100%; border-collapse: collapse; }
+  th     { border: 1px solid var(--border-1); padding: 10px 14px; text-align: left; font-weight: var(--fw-semibold); background: var(--bg-3); }
+  td     { border: 1px solid var(--border-1); padding: 10px 14px; color: var(--fg-2); }
+  hr     { border-color: var(--border-1); margin: 32px 0; }
+}
+
+/* ── Components ─────────────────────────────────────────────────────────── */
+@layer components {
+  /* Buttons — brand style: sharp radius, lowercase, bold */
+  .btn {
+    @apply inline-flex items-center justify-center font-bold cursor-pointer;
+    font-family: var(--font-body);
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    padding: 10px 20px;
+    border-radius: var(--r-1);
+    text-transform: lowercase;
+    transition: all var(--dur-fast) var(--ease-punch);
+    border: none;
+  }
+  .btn-primary {
+    background: var(--ov-red);
+    color: #fff;
+  }
+  .btn-primary:hover { background: var(--ov-red-bright); }
+  .btn-secondary {
+    background: var(--ov-graphite);
+    color: #fff;
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ov-graphite-deep);
+    border: 2px solid var(--ov-graphite-deep);
+  }
+
+  /* Inputs */
+  .input {
+    @apply w-full;
+    font-family: var(--font-body);
+    font-size: var(--fs-body-s);
+    padding: 10px 14px;
+    border: 1px solid var(--border-1);
+    border-radius: var(--r-2);
+    color: var(--fg-1);
+    background: var(--bg-1);
+    outline: none;
+    transition: border-color var(--dur-fast);
+  }
+  .input:focus {
+    border-color: var(--ov-red);
+    box-shadow: 0 0 0 2px var(--ov-red-tint);
+  }
+
+  /* Section label */
+  .ov-label {
+    font-family: var(--font-body);
+    font-size: var(--fs-caption);
+    font-weight: var(--fw-bold);
+    letter-spacing: var(--tr-label);
+    text-transform: uppercase;
+    color: var(--fg-3);
+  }
+}
+
+/* ── Animations ──────────────────────────────────────────────────────────── */
+@layer utilities {
+  @keyframes gradientLoop {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .animate-gradient {
+    background-size: 400% 400%;
+    animation: gradientLoop 10s ease infinite;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fadeIn { animation: fadeIn 0.25s ease; }
+}
+
+/* ── Prose (MDX content) ─────────────────────────────────────────────────── */
+::selection {
+  background: var(--ov-red-tint);
+  color: var(--ov-red-deep);
+}

@@ -1,0 +1,162 @@
+# Direção de Imagem
+
+## 1. A Postura da Marca
+
+A Oversize é uma **marca gráfica**, não fotográfica.
+
+Isso significa que o sistema visual principal da marca é construído com tipografia, cor, formas e grafismos — não com fotografias.
+
+Quando uma imagem aparece, ela entra nesse sistema. Não o substitui.
+
+---
+
+## 2. Fuga do Genérico
+
+O banco de imagens do marketing digital tem um arquivo padrão que a Oversize nunca usa:
+
+- pessoas sorrindo em reunião;
+- mãos apontando para post-its;
+- notebook com dashboard;
+- foto de escritório neutro;
+- handshake de negócio;
+- gráfico de barras subindo;
+- foguete, alvo, megafone, engrenagem.
+
+A pergunta que filtra toda imagem é:
+
+> **Isso poderia estar no site de qualquer consultoria de marketing? Se sim: fora.**
+
+---
+
+## 3. Quando Usar Fotografia
+
+A Oversize usa fotografia de forma **editorial e pontual**. Não como wallpaper, não como fundo de seção, não como elemento padrão de todos os posts.
+
+Fotografia aparece quando o conteúdo exige **prova de realidade**: um caso concreto, um bastidor, um retrato.
+
+### Assuntos prioritários
+
+**Pessoas em processo de pensamento** (não performance):
+- close em anotações reais;
+- leitura de documento estratégico;
+- interação com material físico (mapa, rascunho, framework);
+- retrato com postura calma e segura;
+- conversa real (não pose para câmera).
+
+**Objetos de trabalho intelectual:**
+- cadernos, livros, papéis;
+- telas com conteúdo real;
+- materiais impressos da marca;
+- ferramentas de criação.
+
+**Ambientes:**
+- espaços com silêncio e presença;
+- linhas arquitetônicas limpas;
+- iluminação controlada ou natural suave.
+
+---
+
+## 4. Tratamento Fotográfico
+
+### Quando fotografias forem usadas
+
+Aplicar tratamento editorial consistente:
+
+| Parâmetro | Direção |
+|---|---|
+| Saturação | Baixa a moderada |
+| Contraste | Elegante, não agressivo |
+| Temperatura | Neutra ou levemente quente |
+| Exposição | Controlada, sem sobrexposição |
+| Ruído | Sem filtro de granulação extra |
+
+O objetivo é que a foto **pareça parte do sistema**, não que "compete" com a identidade.
+
+### Duotone como tratamento de marca
+
+Para ocasiões onde a foto precisa entrar com mais força identitária:
+
+- **Duotone grafite/vermelho** — foto em tom de grafite com toque de vermelho nos destaques;
+- **B&W editorial** — preto e branco com contraste controlado.
+
+Esses tratamentos criam unidade imediata entre a imagem e a paleta da marca.
+
+---
+
+## 5. Enquadramento e Composição
+
+### Plano
+
+Preferir closes e planos médios. Grandes planos gerais de ambiente ficam para casos específicos de storytelling de espaço.
+
+### Ângulo
+
+- Normal (câmera no nível do assunto): preferência.
+- Contra-plongée (câmera de baixo): para autoridade em retrato.
+- Vista aérea: para organização de objetos (mesa de trabalho, materiais dispostos).
+
+### Alinhamento
+
+Composição hard left alinhada ao grid da marca.
+
+---
+
+## 6. O Que Definitivamente Não Usar
+
+**Nunca:**
+- Banco de imagem de "reunião de equipe animada";
+- Foto de palco/evento motivacional;
+- Estética de "lifestyle empreendedor";
+- Imagens geradas por IA com aparência genérica;
+- Filtro de Instagram ou presets de agência;
+- Composição centralizada e simétrica que parece stock photo;
+- Qualquer coisa que pareça "campanha de marketing digital".
+
+---
+
+## 7. Ilustração
+
+A Oversize **não usa ilustração figurativa** (personagens, cenas explicativas, bonecos).
+
+Se houver necessidade de representar conceito visualmente, o caminho é:
+
+**Diagrama / esquema tipográfico:**
+- matrizes;
+- fluxos;
+- listas estruturadas com visual de grid;
+- tabelas com hierarquia de cor.
+
+Isso é coerente com a postura: a Oversize representa **pensamento organizado**, não histórias ilustradas.
+
+---
+
+## 8. Iconografia como Imagem
+
+Na maioria dos contextos onde uma imagem seria usada, a Oversize substitui por **ícone + texto estruturado**.
+
+Isso é mais fiel à identidade: limpo, preciso, no sistema.
+
+Sistema: **Lucide** (stroke-only, 2px, currentColor).
+
+---
+
+## 9. Pontos de Contato e Imagem
+
+| Contexto | Uso de imagem |
+|---|---|
+| Site (home) | Gráfico/tipográfico prioritário. Foto apenas em seção de caso/prova. |
+| Posts LinkedIn | Grafismo tipográfico. Foto apenas em posts de bastidor real. |
+| Apresentações | Foto como elemento de suporte, não de fundo. |
+| Proposta comercial | Sem foto. Diagrama e estrutura. |
+| Newsletter | Raramente. Quando sim: editorial e contextual. |
+| Brand System (este site) | Capturas e grafismos do próprio sistema. |
+
+---
+
+## 10. Síntese
+
+A direção de imagem da Oversize é uma decisão de **disciplina criativa**: a marca confia tão profundamente no seu sistema gráfico que não precisa de fotografia como muleta visual.
+
+Quando uma imagem aparece, ela foi escolhida como uma palavra em uma frase — com função, não para preencher espaço.
+
+> "A melhor imagem para a Oversize é o grafismo que já foi construído. A foto é o reforço, não o argumento."

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0306)https://2a6b0a0c-26e3-45be-9854-12a59e85891f.claudeusercontent.com/v1/design/projects/2a6b0a0c-26e3-45be-9854-12a59e85891f/serve/index-print.html?t=2516bacebf56cfcb4937232643232c8f3a8314ff8006eb3fbd00a988f91613f4.6960a867-9966-4158-a010-d9785168cf2a.902ed836-a3fc-46a7-b599-dd7c0cc933bb.1778710235&direct=1 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style data-omelette-injected="">html,body{background:transparent}</style><script data-omelette-injected="">(()=>{var j=["https://claude.ai","https://preview.claude.ai"];var x=true;var S=30000;var f=3000;document.addEventListener("DOMContentLoaded",()=>{const H=window.Babel;const G="om-src-id";if(H&&H.registerPlugin&&!(H.availablePlugins&&H.availablePlugins[G])){H.registerPlugin(G,({types:Y})=>({visitor:{JSXOpeningElement(U,Q){const J=U.node;if(J.name&&J.name.type==="JSXMemberExpression")return;for(let V=0;V<J.attributes.length;V++){const L=J.attributes[V];if(L.type==="JSXAttribute"&&L.name&&L.name.name==="data-om-id")return}const W=Q.file&&Q.file.opts&&Q.file.opts.filename||"?";const Z=J.loc&&J.loc.start;const z=`jsx:${W}:${J.start??0}:${Z?Z.line:0}:${Z?Z.column+1:0}`;J.attributes.push(Y.jsxAttribute(Y.jsxIdentifier("data-om-id"),Y.stringLiteral(z)))}}}))}const k="om-text-extract";let A=false;if(x&&H&&H.registerPlugin&&!(H.availablePlugins&&H.availablePlugins[k])){const Y=window.React;if(Y&&Y.useSyncExternalStore&&Y.createElement){A=true;const U={};const Q=new Set;let J=0;window.__omTextO=U;window.__omTextSet=(z)=>{for(const V in z){const L=z[V];if(L==null)delete U[V];else U[V]=L}J++;Q.forEach((V)=>V())};const W=(z)=>{Q.add(z);return()=>Q.delete(z)};const Z=()=>J;window.__OmT=function z(V){Y.useSyncExternalStore(W,Z,Z);return Y.createElement("span",{"data-om-text":V.i,className:"__om-t"},V.i in U?U[V.i]:V.children)};H.registerPlugin(k,({types:z})=>{const V={style:1,script:1,noscript:1,textarea:1,title:1,option:1,text:1,tspan:1,textPath:1};const L={placeholder:1,alt:1,title:1,label:1,"aria-label":1,"aria-description":1,"aria-placeholder":1};const _=($,C)=>z.logicalExpression("??",z.memberExpression(z.logicalExpression("||",z.memberExpression(z.identifier("window"),z.identifier("__omTextO")),z.objectExpression([])),z.stringLiteral($),true),C);const E=($)=>$.file&&$.file.opts&&$.file.opts.filename||"?";const B=($)=>$.file&&$.file.code||"";const b=($,C)=>{const X=(F)=>F&&F.start!=null&&F.end!=null&&(F.type==="StringLiteral"||F.type==="TemplateLiteral"&&F.expressions.length===0)?[F.start,F.end]:null;const N=X(C);if(N)return N;if(C&&C.type==="Identifier"){const F=$.scope.getBinding(C.name);if(F&&F.constant&&F.path.node.type==="VariableDeclarator"){return X(F.path.node.init)}}return null};const M=($,C,X)=>{const N=$.node;let F=false;const w=(K,q)=>{F=true;return z.jsxElement(z.jsxOpeningElement(z.jsxIdentifier("__OmT"),[z.jsxAttribute(z.jsxIdentifier("i"),z.stringLiteral(K))],false),z.jsxClosingElement(z.jsxIdentifier("__OmT")),[q],false)};const D=N.children.map((K)=>{if(K.type==="JSXText"){if(K.start==null||K.end==null)return K;const q=X.slice(K.start,K.end);const R=q.length-q.trimStart().length;const m=q.length-q.trimEnd().length;if(R+m>=q.length)return K;return w(`txt:${C}:${K.start+R}:${K.end-m}`,K)}if(K.type==="JSXExpressionContainer"){const q=b($,K.expression);if(q)return w(`str:${C}:${q[0]}:${q[1]}`,K)}return K});if(F)N.children=D};return{visitor:{JSXOpeningElement($,C){const X=$.node;const N=E(C);const F={};for(let w=0;w<X.attributes.length;w++){const D=X.attributes[w];if(D.type!=="JSXAttribute"||!D.name)continue;const K=D.name.name;if(!L[K])continue;if(!D.value||D.value.type!=="StringLiteral")continue;if(D.value.start==null||D.value.end==null)continue;const q=`txt:${N}:${D.value.start}:${D.value.end}`;F[K]=q;D.value=z.jsxExpressionContainer(_(q,z.stringLiteral(D.value.value)))}if(Object.keys(F).length){X.attributes.push(z.jsxAttribute(z.jsxIdentifier("data-om-text-attrs"),z.stringLiteral(JSON.stringify(F))))}},JSXElement($,C){const X=$.node.openingElement;const N=X&&X.name&&X.name.name;if(N==="__OmT")return;if(typeof N==="string"&&V[N])return;M($,E(C),B(C))},JSXFragment($,C){M($,E(C),B(C))}}}})}}const u=A?["transform-react-jsx-source",G,k]:["transform-react-jsx-source",G];document.querySelectorAll('script[type="text/babel"],script[type="text/jsx"]').forEach((Y,U)=>{const Q=Y.getAttribute("data-plugins")||"";const J=u.filter((W)=>Q.indexOf(W)<0);if(J.length){Y.setAttribute("data-plugins",Q?`${Q},${J.join(",")}`:J.join(","))}if(!Y.hasAttribute("data-filename")){Y.setAttribute("data-filename",Y.getAttribute("src")||`inline-${U}`)}})});var y=window.parent;if(y&&y!==window){const H=(Q,J)=>{try{y.postMessage({__omelette_log:true,type:Q,data:J},"*")}catch{}};["log","warn","error"].forEach((Q)=>{const J=console[Q];console[Q]=(...W)=>{const Z=W.map((z)=>{try{return typeof z==="object"?JSON.stringify(z):String(z)}catch{try{return String(z)}catch{return"[unstringifiable]"}}}).join(" ");H(Q,Z);J.apply(console,W)}});window.addEventListener("error",(Q)=>{const J=Q.target;if(J&&J!==window&&J.tagName){const W=J.src||J.href||"";H("resource_error",`${J.tagName} failed to load: ${W}`)}else{H("error",`${Q.message||"Unknown error"} at ${Q.filename||"?"}:${Q.lineno||0}:${Q.colno||0}`)}},true);window.addEventListener("unhandledrejection",(Q)=>{const J=Q.reason;const W=J instanceof Error?`${J.message} ${J.stack}`:String(J);H("error",`Unhandled rejection: ${W}`)});const G=()=>{try{y.postMessage({type:"omelette:height",height:document.documentElement.scrollHeight},"*")}catch{}};if(document.readyState==="complete")G();else window.addEventListener("load",G);if(window.ResizeObserver)new ResizeObserver(G).observe(document.documentElement);const k={};let A=0;window.claude={complete(Q){return new Promise((J,W)=>{if(!j.length){W(new Error("claude.complete: no parent origin"));return}const Z=`c${++A}`;const z=()=>setTimeout(()=>{delete k[Z];W(new Error(`claude.complete: no data for ${S/1000}s`))},S);const V=z();k[Z]={resolve:J,reject:W,text:"",t:V,arm:z};try{for(const L of j){y.postMessage({__om_api:true,id:Z,body:Q},L)}}catch(L){clearTimeout(V);delete k[Z];W(L)}})}};const u={};let Y=0;window.omelette={writeFile:(Q,J)=>new Promise((W,Z)=>{if(!j.length){W();return}const z=`f${++Y}`;const V=setTimeout(()=>{delete u[z];W()},f);u[z]={resolve:W,reject:Z,t:V};try{for(const L of j){y.postMessage({__om_file:true,id:z,op:"write",path:Q,content:J},L)}}catch{clearTimeout(V);delete u[z];W()}})};const U=(Q)=>{try{return JSON.stringify(Q)}catch{return JSON.stringify(String(Q))}};window.addEventListener("message",(Q)=>{if(j.indexOf(Q.origin)<0)return;if(Q.source!==y)return;const J=Q.data;if(!J)return;if(J.type==="omelette-preview-refresh"){if(typeof J.token!=="string"||!/^[0-9a-f.-]+$/.test(J.token))return;const z=Math.max(1,Math.floor((J.expiresAt||0)-Date.now()/1000));document.cookie="__Host-omelette-preview="+J.token+"; Path=/; Secure; SameSite=None; Partitioned; Max-Age="+z;return}if(J.__om_file_r){const z=u[J.id];if(!z)return;clearTimeout(z.t);delete u[J.id];if(J.ok)z.resolve();else z.reject(new Error(J.error||"write failed"));return}if(J.__om_api_r){const z=k[J.id];if(!z)return;if(J.error!=null){clearTimeout(z.t);delete k[J.id];z.reject(new Error(J.error));return}if(J.chunk!=null){clearTimeout(z.t);z.t=z.arm();z.text+=J.chunk;return}if(J.done){clearTimeout(z.t);delete k[J.id];z.resolve(J.text!=null?J.text:z.text);return}return}if(!J.__om_eval)return;const W=J;const Z=(z)=>{Q.source.postMessage({...z,__om_eval_r:1,id:W.id},Q.origin)};try{const z=(0,eval)(W.code);if(z&&typeof z.then==="function"){z.then((V)=>Z({ok:1,v:U(V)}),(V)=>Z({ok:0,e:String(V)}))}else{Z({ok:1,v:U(z)})}}catch(z){Z({ok:0,e:String(z)})}})}})();
+</script>
+
+
+<title>Oversize Design System</title>
+<link rel="stylesheet" href="./Oversize Design System_files/colors_and_type.css">
+<style>
+  /* ---- Screen base ---- */
+  html,body{margin:0;padding:0;background:#fafafa;color:var(--fg-1);font-family:var(--font-body)}
+  .hero{background:var(--ov-graphite);color:#fff;padding:64px 48px 48px;display:flex;align-items:flex-end;justify-content:space-between;gap:32px}
+  .hero h1{margin:0;font-family:var(--font-display);font-weight:900;font-size:112px;line-height:.9;letter-spacing:-.03em;text-transform:lowercase}
+  .hero h1 .red{color:var(--ov-red)}
+  .hero .meta{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--ov-ash);max-width:280px;line-height:1.6}
+  main{padding:48px;max-width:1200px;margin:0 auto}
+  section{margin-bottom:56px}
+  h2{font-family:var(--font-display);font-weight:900;font-size:40px;letter-spacing:-.02em;text-transform:lowercase;margin:0 0 20px;color:var(--ov-graphite-deep)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .card{display:block;background:#fff;border:2px solid var(--ov-graphite-deep);border-radius:8px;padding:18px;text-decoration:none;color:inherit;box-shadow:6px 6px 0 0 var(--ov-graphite-deep);margin-right:6px;margin-bottom:6px}
+  .card .label{font:700 10px/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--ov-red);margin-bottom:6px}
+  .card .title{font-family:var(--font-display);font-weight:800;font-size:18px;letter-spacing:-.01em;text-transform:lowercase}
+  .card .sub{font-size:12px;color:var(--fg-3);margin-top:4px}
+
+  /* ---- Print ---- */
+  @media print {
+    @page { size: A4 portrait; margin: 0; }
+
+    html, body { background: #fff; }
+
+    .hero {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      padding: 48px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .hero h1 { font-size: 80px; }
+
+    main { padding: 32px 40px; max-width: 100%; }
+
+    section { break-inside: avoid; margin-bottom: 36px; }
+
+    .grid { grid-template-columns: repeat(3,1fr); gap:12px; }
+
+    .card {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      break-inside: avoid;
+      box-shadow: 4px 4px 0 0 var(--ov-graphite-deep);
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+
+    .card .label { color: var(--ov-red) !important; }
+
+    /* force colors */
+    .red { color: var(--ov-red) !important; }
+    h2 { color: var(--ov-graphite-deep) !important; }
+  }
+</style>
+<meta id="dcngeagmmhegagicpcmpinaoklddcgon"></head>
+<body>
+<div class="hero">
+  <h1><span class="red">over</span>size<br><span style="color:var(--ov-ash);font-size:40px;font-weight:700">design system</span></h1>
+  <div class="meta">a flat, graphic, poster-bold brand system. three colors. one red per screen. big lowercase type.</div>
+</div>
+<main>
+  <section>
+    <h2>brand</h2>
+    <div class="grid">
+      <div class="card"><div class="label">BRAND</div><div class="title">logo · primary</div><div class="sub">wordmark on white + red</div></div>
+      <div class="card"><div class="label">BRAND</div><div class="title">logo · variants</div><div class="sub">monochrome lockups</div></div>
+      <div class="card"><div class="label">BRAND</div><div class="title">logo · usage</div><div class="sub">clear space + sizing</div></div>
+      <div class="card"><div class="label">BRAND</div><div class="title">voice &amp; tone</div><div class="sub">do / don't</div></div>
+      <div class="card"><div class="label">BRAND</div><div class="title">iconography</div><div class="sub">lucide · stroke 2 · substitute</div></div>
+    </div>
+  </section>
+  <section>
+    <h2>colors</h2>
+    <div class="grid">
+      <div class="card"><div class="label">COLORS</div><div class="title">core three</div><div class="sub">red · graphite · ash</div></div>
+      <div class="card"><div class="label">COLORS</div><div class="title">extended scale</div><div class="sub">full ramps</div></div>
+      <div class="card"><div class="label">COLORS</div><div class="title">semantic</div><div class="sub">role tokens</div></div>
+    </div>
+  </section>
+  <section>
+    <h2>type</h2>
+    <div class="grid">
+      <div class="card"><div class="label">TYPE</div><div class="title">display specimen</div><div class="sub">sansa pro black 900</div></div>
+      <div class="card"><div class="label">TYPE</div><div class="title">scale</div><div class="sub">display → label</div></div>
+    </div>
+  </section>
+  <section>
+    <h2>spacing &amp; surface</h2>
+    <div class="grid">
+      <div class="card"><div class="label">SPACING</div><div class="title">4px scale</div><div class="sub">--sp-1 through --sp-9</div></div>
+      <div class="card"><div class="label">SPACING</div><div class="title">radii + shadows</div><div class="sub">signature offset shadow</div></div>
+    </div>
+  </section>
+  <section>
+    <h2>components</h2>
+    <div class="grid">
+      <div class="card"><div class="label">COMPONENTS</div><div class="title">buttons</div><div class="sub">primary · secondary · ghost</div></div>
+      <div class="card"><div class="label">COMPONENTS</div><div class="title">inputs</div><div class="sub">text · error · checkbox</div></div>
+      <div class="card"><div class="label">COMPONENTS</div><div class="title">cards &amp; badges</div><div class="sub">offset + red hero</div></div>
+      <div class="card"><div class="label">COMPONENTS</div><div class="title">states</div><div class="sub">rest · hover · press · focus</div></div>
+    </div>
+  </section>
+</main>
+<script>
+  document.fonts.ready.then(function() {
+    setTimeout(function() { window.print(); }, 500);
+  });
+</script>
+
+<div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"><template shadowrootmode="open"><div class="glasp-extension" style="font-family: inherit;"></div></template></div></body><div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><div class="glasp-extension" style="font-family: inherit;"></div></div></html>
