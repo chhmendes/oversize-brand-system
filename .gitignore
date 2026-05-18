@@ -58,3 +58,7 @@ storybook-static
 # Large binary files
 BS-Overlens.zip
 tsconfig.tsbuildinfo
+
+# macOS duplicate files (created by Finder "duplicate")
+* 2.*
+* 2/
