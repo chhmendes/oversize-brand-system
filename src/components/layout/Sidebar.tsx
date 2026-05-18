@@ -56,9 +56,11 @@ function ChevronRight({ open }: { open: boolean }) {
 
 interface SidebarProps {
   items: NavigationItem[]
+  mobileOpen?: boolean
+  onClose?: () => void
 }
 
-export function Sidebar({ items }: SidebarProps) {
+export function Sidebar({ items, mobileOpen = false, onClose }: SidebarProps) {
   const pathname = usePathname()
   const [mounted, setMounted] = useState(false)
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({})
@@ -97,7 +99,15 @@ export function Sidebar({ items }: SidebarProps) {
   }
 
   return (
-    <aside className="flex h-screen w-[280px] flex-shrink-0 flex-col border-r bg-white dark:bg-[#3C3C3C]" style={{ borderColor: 'var(--border-1)' }}>
+    <aside
+      className={`
+        fixed inset-y-0 left-0 z-50 flex h-screen w-[280px] flex-col border-r bg-white dark:bg-[#3C3C3C]
+        transition-transform duration-300 ease-in-out
+        ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}
+        md:relative md:translate-x-0 md:flex-shrink-0
+      `}
+      style={{ borderColor: 'var(--border-1)' }}
+    >
       {/* Logo */}
       <div className="flex flex-shrink-0 items-center justify-center border-b py-4" style={{ borderColor: 'var(--border-1)' }}>
         <Link href="/">
@@ -166,6 +176,7 @@ export function Sidebar({ items }: SidebarProps) {
                       <Link
                         key={child.title}
                         href={child.href!}
+                        onClick={onClose}
                         className={`flex items-center border-l-2 py-1.5 pl-11 pr-5 text-xs transition-colors duration-150 ${
                           active
                             ? 'border-l-[#B51F3A] font-semibold'
